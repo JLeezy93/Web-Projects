@@ -1,10 +1,64 @@
 <htm>
     <head>
         <title>Josh's Mad Libs Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="../scripts/inputs.js"></script>
+        <style src="../css/styles.css"></style>
+        
     </head>
 
     <body>
-        <h1>Hello World! This is the beginning of the Mad Libs page!</h1>
+        <h1>Welcome to MadLibs!</h1>
+        <h3>Fill out the text boxes to finish the story!</h3>
+    
+        <div class="input" ng-app="inputs" ng-controller="inputCtrl">
+            Adjective: <input type ng-model="adjective1" > <br />
+            Adjective: <input type ng-model="adjective2"> <br />
+            Noun: <input type ng-model="noun1"> <br />
+            Noun: <input type ng-model="noun2"> <br />
+            Plural Noun: <input type ng-model="pluralNoun1"> <br />
+            Game: <input type ng-model="game"> <br />
+            Plural Noun: <input type ng-model="pluralNoun2"> <br />
+            Verb Ending in "ing": <input type ng-model="verbEndingInIng1"> <br />
+            Verb Ending in "ing": <input type ng-model="verbEndingInIng2"> <br />
+            Plural Noun: <input type ng-model="pluralNoun3"> <br />
+            Verb Ending in "ing": <input type ng-model="verbEndingInIng3"> <br />
+            Noun: <input type ng-model="noun3"> <br />
+            Plant: <input type ng-model="plant"> <br />
+            Part of the body: <input type ng-model="partOfTheBody"> <br />
+            Place: <input type ng-model="place"> <br />
+            Verb Ending in "ing": <input type ng-model="verbEndingInIng4"> <br />
+            Adjective: <input type ng-model="adjective3"> <br />
+            Number: <input type ng-model="number"> <br />
+            Plural Noun: <input type ng-model="pluralNoun4"> <br />  
+
+            <p>
+                A vacation is when you take a trip to some {{adjective1}} place
+                with your {{adjective2}} family. Usually you go to some place that is near a/an {{noun1}} or up on a/an {{noun2}}. A good vacation place is one where you can ride {{pluralNoun1}}
+                or play {{game}} or go hunting for {{pluralNoun2}}. I like
+                to spend my time {{verbEndingInIng1}} or {{verbEndingInIng2}}.
+                When parents go on a vacation, they spend their time eating three {{pluralNoun2}} a day, and fathers play golf, and mothers
+                sit around {{verbEndingInIng3}}. Last summer, my little brother
+                fell in a/an {{noun3}} and got poison {{plant}} all
+                over his {{partOfTheBody}}. My family is going to go to (the)
+                {{place}}, and I will practice {{verbEndingInIng4}}. Parents
+                need vacations more than kids because parents are always very {{adjective3}} and because they have to work {{number}}
+                hours every day all year making enough {{pluralNoun4}} to pay
+                for the vacation.      
+            </p>
+            
+            
+                
+            
+        </div>
+        
+      
+                
+
+
+    
+
+        
 
 
 
