@@ -23,3 +23,4 @@ app.controller("inputCtrl", function($scope) {
   $scope.number = "";
 });
 
+
