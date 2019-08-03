@@ -2,72 +2,52 @@
     <head>
         <title>Josh's Mad Libs Page</title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <script src="../scripts/inputs.js"></script>
-        <style src="../css/styles.css"></style>
+        <script src="/Users/joshlee/Desktop/Web Projects/WebProjects-MadLibs/scripts/inputs.js"></script>
+        <script src="/Users/joshlee/Desktop/Web Projects/WebProjects-MadLibs/scripts/scripts.js"></script>
+        <link rel="Stylesheet" href="/Users/joshlee/Desktop/Web Projects/WebProjects-MadLibs/css/styles.css">
         
     </head>
 
-    <body>
-        <h1>Welcome to MadLibs!</h1>
-        <h3>Fill out the text boxes to finish the story!</h3>
+    <body class ="bg-body">
+        <h1 class="header-title">Welcome to MadLibs!</h1>
+        <h3 class="header-subtitle">Fill out the text boxes to finish the story!</h3>
     
         <div class="input" ng-app="inputs" ng-controller="inputCtrl">
-            Adjective: <input type ng-model="adjective1" > <br />
-            Adjective: <input type ng-model="adjective2"> <br />
-            Noun: <input type ng-model="noun1"> <br />
-            Noun: <input type ng-model="noun2"> <br />
-            Plural Noun: <input type ng-model="pluralNoun1"> <br />
-            Game: <input type ng-model="game"> <br />
-            Plural Noun: <input type ng-model="pluralNoun2"> <br />
-            Verb Ending in "ing": <input type ng-model="verbEndingInIng1"> <br />
-            Verb Ending in "ing": <input type ng-model="verbEndingInIng2"> <br />
-            Plural Noun: <input type ng-model="pluralNoun3"> <br />
-            Verb Ending in "ing": <input type ng-model="verbEndingInIng3"> <br />
-            Noun: <input type ng-model="noun3"> <br />
-            Plant: <input type ng-model="plant"> <br />
-            Part of the body: <input type ng-model="partOfTheBody"> <br />
-            Place: <input type ng-model="place"> <br />
-            Verb Ending in "ing": <input type ng-model="verbEndingInIng4"> <br />
-            Adjective: <input type ng-model="adjective3"> <br />
-            Number: <input type ng-model="number"> <br />
-            Plural Noun: <input type ng-model="pluralNoun4"> <br />  
+            <p class="input-p">Adjective: <input type ng-model="adjective1"></p> 
+            <p class="input-p">Adjective: <input type ng-model="adjective2"></p>
+            <p class="input-p">Noun: <input type ng-model="noun1"></p>
+            <p class="input-p">Noun: <input type ng-model="noun2"></p> 
+            <p class="input-p">Plural Noun: <input type ng-model="pluralNoun1"></p> 
+            <p class="input-p">Game: <input type ng-model="game"></p>
+            <p class="input-p">Plural Noun: <input type ng-model="pluralNoun2"></p>
+            <p class="input-p">Verb Ending in "ing": <input type ng-model="verbEndingInIng1"></p> 
+            <p class="input-p">Verb Ending in "ing": <input type ng-model="verbEndingInIng2"></p>
+            <p class="input-p">Plural Noun: <input type ng-model="pluralNoun3"></p>
+            <p class="input-p">Verb Ending in "ing": <input type ng-model="verbEndingInIng3"></p> 
+            <p class="input-p">Noun: <input type ng-model="noun3"></p>
+            <p class="input-p">Plant: <input type ng-model="plant"></p>
+            <p class="input-p">Part of the body: <input type ng-model="partOfTheBody"></p>
+            <p class="input-p">Place: <input type ng-model="place"></p>
+            <p class="input-p">Verb Ending in "ing": <input type ng-model="verbEndingInIng4"></p>
+            <p class="input-p">Adjective: <input type ng-model="adjective3"></p>
+            <p class="input-p">Number: <input type ng-model="number"></p> 
+            <p class="input-p">Plural Noun: <input type ng-model="pluralNoun4"></p>  
 
-            <p>
-                A vacation is when you take a trip to some {{adjective1}} place
-                with your {{adjective2}} family. Usually you go to some place that is near a/an {{noun1}} or up on a/an {{noun2}}. A good vacation place is one where you can ride {{pluralNoun1}}
-                or play {{game}} or go hunting for {{pluralNoun2}}. I like
-                to spend my time {{verbEndingInIng1}} or {{verbEndingInIng2}}.
-                When parents go on a vacation, they spend their time eating three {{pluralNoun2}} a day, and fathers play golf, and mothers
-                sit around {{verbEndingInIng3}}. Last summer, my little brother
-                fell in a/an {{noun3}} and got poison {{plant}} all
-                over his {{partOfTheBody}}. My family is going to go to (the)
-                {{place}}, and I will practice {{verbEndingInIng4}}. Parents
-                need vacations more than kids because parents are always very {{adjective3}} and because they have to work {{number}}
-                hours every day all year making enough {{pluralNoun4}} to pay
+            <p class="input-p output">
+                A vacation is when you take a trip to some <i class="input-answer"><i class="input-answer">{{adjective1}}</i></i> place
+                with your <i class="input-answer"><i class="input-answer">{{adjective2}}</i></i> family. Usually you go to some place that is near a/an <i class="input-answer">{{noun1}}</i> or up on a/an <i class="input-answer">{{noun2}}</i>. A good vacation place is one where you can ride <i class="input-answer">{{pluralNoun1}}</i>
+                or play <i class="input-answer">{{game}}</i> or go hunting for <i class="input-answer">{{pluralNoun2}}</i>. I like
+                to spend my time <i class="input-answer">{{verbEndingInIng1}}</i> or <i class="input-answer">{{verbEndingInIng2}}</i>.
+                When parents go on a vacation, they spend their time eating three <i class="input-answer">{{pluralNoun2}}</i> a day, and fathers play golf, and mothers
+                sit around <i class="input-answer">{{verbEndingInIng3}}</i>. Last summer, my little brother
+                fell in a/an <i class="input-answer">{{noun3}}</i> and got poison <i class="input-answer">{{plant}}</i> all
+                over his <i class="input-answer">{{partOfTheBody}}</i>. My family is going to go to (the)
+                <i class="input-answer">{{place}}</i>, and I will practice <i class="input-answer">{{verbEndingInIng4}}</i>. Parents
+                need vacations more than kids because parents are always very <i class="input-answer">{{adjective3}}</i> and because they have to work <i class="input-answer">{{number}}</i>
+                hours every day all year making enough <i class="input-answer">{{pluralNoun4}}</i> to pay
                 for the vacation.      
-            </p>
-            
-            
-                
-            
+            </p>   
         </div>
         
-      
-                
-
-
-    
-
-        
-
-
-
-   
-   
-   
-   
-   
-   
-   
     </body>
 </htm>
