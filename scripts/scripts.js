@@ -1,1 +1,1 @@
-console.log("Im seeing this in scripts.js!")
+alert("This an alert!")
